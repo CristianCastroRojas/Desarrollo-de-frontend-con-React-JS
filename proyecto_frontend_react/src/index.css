@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.custom-button{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    background-color: #981AFF;
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.15);
+}
+
+.custom-button-1{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    background-color: #D4BC0C;
+    color: black;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.15);
+}
+
+.custom-button-2{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    background-color: #591778;
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.15);
+}
+
+.custom-button-3{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    background-color: #DD011B;
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.15);
+}
+
+.custom-button:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.custom-button-1:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.custom-button-2:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.custom-button-3:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+
+/*--------------Barra de Navegacion-----------------*/
+
+nav {
+    background-color: #981AFF;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+/*------------Logos-------------*/
+.logo-brand {
+    margin: 40px;
+    height: 60px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-pse {
+    margin: 40px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+/*---------menus---------*/
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: 800;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    color: black;
+}
+
+nav ul li:hover a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+/*----------boton de menu--------------------*/
+.toggle-btn {
+    display: none;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+#menu-btn-toggle {
+    font-size: 30px;
+    color: black
+}
+
+#menu-btn-toggle:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*-------header---------*/
+
+header{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+header div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header div:first-of-type{
+    align-items: flex-start;
+}
+
+header h1{
+    font-size: 4rem;
+    text-transform:uppercase;
+}
+
+header img{
+    width: 80%;
+    border-radius: 15px 0 20px;
+}
+
+/*---------------------Quienes Somos--------------------*/
+
+#about-section{
+    background-color: #757470;
+    padding: 3rem 0;
+}
+
+#about-section .container{
+    display: flex;
+}
+
+#about-section .container div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#about-section img{
+    width: 80%;
+}
+
+#about-section h2,
+#about-section p {
+    color: black;
+    text-align: justify;
+}
+
+#about-section h2{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/*Nuestras marcas*/
+
+#projects-section{
+    padding: 3rem 0;
+}
+
+#projects-section .project{
+    display: flex;
+    margin: 3rem 0;
+}
+
+#projects-section .project div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+#projects-section img{
+    width: 70%;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .15);
+}
+
+#projects-section h2{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#projects-section h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*seccion de contacto*/
+
+#contact-section{
+    background-color: #757470;
+    padding: 3rem 0;
+}
+
+#contact-section h2,
+#contact-section li,
+#contact-section label{
+    color:black;
+}
+
+#contact-section h2{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contact-section ul{
+    list-style-type: none;
+}
+
+#contact-section li{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#contact-section li strong{
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#contact-section .contact-section-content{
+    display: flex;
+}
+
+#contact-section .contact-half-section{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact-section form{
+    width: 75%;
+}
+
+#contact-section form div{
+    display: flex;
+    flex-direction: column;
+    margin: 3px auto;
+}
+
+#contact-section form div:last-child {
+    display: block;
+}
+
+#contact-section form label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#contact-section form input,
+#contact-section form textarea{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 0.25rem;
+}
+
+#contact-section form input{
+    height: 40px;
+}
+
+#contact-section form input:focus,
+#contact-section form textarea:focus{
+    outline: none;
+}
+
+#contact-section form button{
+    border: none;
+}
+
+.whatsapp-contact{
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*pie de pagina*/
+
+.logo-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*----------------responsive-----------------*/
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        padding-bottom: 80px;
+        transition: all .5s;
+        background-color: #981AFF;
+    }
+
+    .toggle-style {
+        left: 0;
+    }
+
+    .toggle-btn {
+        display: flex;
+        width: 75%;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header div{
+     width: 100%;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+    }
+    #about-section .container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #about-section .container div{
+        width: 100%;
+    }
+
+    #about-section h2{
+        margin-top: 1.5rem;
+    }
+
+    #projects-section .project{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #projects-section .project:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    #projects-section .project div{
+        width: 100%;
+    }
+
+    #projects-section img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #contact-section .contact-section-content{
+        flex-direction: column-reverse;
+    }
+
+    #contact-section .contact-half-section{
+        width: 100%;
+    }
+
+    #contact-section .contact-half-section:first-of-type{
+        margin-top: 3rem;
+    }
+}
+
+@media(max-width: 576px){
+    #about-section h2,
+    #projects-section h2,
+    #contact-section h2{
+        font-size: 2.5rem;
+    }
+
+    #contact.section form{
+        width: 100%;
+    }
+}
